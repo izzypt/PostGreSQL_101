@@ -4,10 +4,10 @@ Learn PGSQL basic concepts , uses and examples.
 # Index
 
 - [What is Postgres](#whatispostgres)
-- Change Database Theme
-- Create a Database
-- Design a Database
-- Turn Invoice into a Database
+- [Change Database to Dark Theme](#darktheme)
+- [Create a Database](#createDB)
+- [Design a Database](#designdb)
+- [Turn Invoice into a Database](#invoicetodb)
 - Make a Table
 - Data Types
 - Adding Data to Table
@@ -42,17 +42,17 @@ Learn PGSQL basic concepts , uses and examples.
 - GROUP BY
 -  HAVING
 - AGGREGATE FUNCTIONS
-1:34:22 WORKING WITH VIEWS
-1:45:01 SQL Functions
-1:49:00 Dollar Quotes
-1:50:06 Functions that Return Void
-1:52:38 Get Maximum Product Price
-1:53:39 Get Total Value of Inventory
-1:54:26 Get Number of Customers
-1:56:15 Named Parameters
-2:01:30 Return a Row / Composite
-2:03:38 Get Multiple Rows
-2:07:08 PL/pgSQL
+- WORKING WITH VIEWS
+- SQL Functions
+- Dollar Quotes
+- Functions that Return Void
+- Get Maximum Product Price
+- Get Total Value of Inventory
+- Get Number of Customers
+- Named Parameters
+- Return a Row / Composite
+- Get Multiple Rows
+- PL/pgSQL
 2:11:35 Variables in Functions
 2:15:55 Store Rows in Variables
 2:19:17 IN INOUT and OUT
@@ -114,3 +114,45 @@ To start using `PostgreSQL`, you can install it on your local machine, set up a 
 - **Data Warehousing**: PostgreSQL's powerful querying and indexing capabilities make it suitable for data warehousing and business intelligence applications.
 - **Geospatial Data**: With the PostGIS extension, PostgreSQL becomes a powerful database for handling geographic information system (GIS) data.
 - **Financial Systems**: Its ACID compliance and support for complex transactions make PostgreSQL a popular choice for financial applications.
+
+<a id="darktheme"></a>
+
+# Change Database to Dark theme
+
+In `pgAdmin`:
+
+- File -> Preferences -> Miscellaneous -> Themes -> Theme -> Dark
+
+<a id="createDB"></a>
+
+# Create a Database
+
+- Servers -> PostgreSQL -> Databases (right click) -> Create -> Database
+
+- <img width="1626" alt="image" src="https://github.com/user-attachments/assets/78e85642-8b37-45c8-b9e5-866076188ace">
+
+
+<a id="designdb"></a>
+
+# Design a Database
+
+When you start creating a DB, you need to: 
+
+- Make sure 1 table only represent 1 real world object, for example: 
+  - customers
+  - orders
+  - sales
+
+- Columns are going to store only 1 piece of information, like:
+  - name
+  - address
+  - state
+ 
+- How do different tables relate?
+  - If we have a sales order we are going to need to relate our customer table to the sales table.
+ 
+<a id="invoicetodb"></a>
+
+# Turn Invoice into DB
+
+<img width="1063" alt="image" src="https://github.com/user-attachments/assets/43f1e304-ea7e-4042-bbd6-4efbc6bfc930">
