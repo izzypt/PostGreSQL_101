@@ -130,10 +130,6 @@ In `pgAdmin`:
 
 - <img width="1626" alt="image" src="https://github.com/user-attachments/assets/78e85642-8b37-45c8-b9e5-866076188ace">
 
-<a id="createtable"></a>
-
-# Create a Table
-
 When you start creating a DB, you need to: 
 
 - Make sure 1 table only represent 1 real world object, for example: 
@@ -149,9 +145,9 @@ When you start creating a DB, you need to:
 - How do different tables relate?
   - If we have a sales order we are going to need to relate our customer table to the sales table.
  
-<a id="invoicetodb"></a>
+<a id="createtable"></a>
 
-# Turn Invoice into DB
+# Create a Table
 
 Go into the `Query`tool and 
 
