@@ -155,8 +155,6 @@ When you start creating a DB, you need to:
 
 # Turn Invoice into DB
 
-<img width="1063" alt="image" src="https://github.com/user-attachments/assets/43f1e304-ea7e-4042-bbd6-4efbc6bfc930">
-
 Go into the `Query`tool and 
 
 ```
