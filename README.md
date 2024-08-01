@@ -9,7 +9,7 @@ Learn PGSQL basic concepts , uses and examples.
 - [Design a Database](#designdb)
 - [Make a Table](#createtable)
 - [Data Types](#datatypes)
-- Adding Data to Table
+- [Adding Data to Table](#datatotable)
 - To See Data
 - SELECT
 - Create Custom Type
@@ -254,3 +254,5 @@ It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 - **TSRANGE**: Range of timestamps without time zone
 - **TSTZRANGE**: Range of timestamps with time zone
 - **DATERANGE**: Range of dates
+
+
