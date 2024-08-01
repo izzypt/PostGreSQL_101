@@ -24,24 +24,24 @@ Learn PGSQL basic concepts , uses and examples.
 - Where
 - Conditional Operators
 - Logical Operators
-58:12 Order By
-59:32 Limit
-1:01:45 GROUP BY
-1:03:11 Distinct
-1:05:00 Getting Data from Multiple Tables
-1:05:21 Inner Join
-1:08:50 Join 3 Tables
-1:13:15  Arithmetic Operators
-1:13:45 Join with Where
-1:14:55 Outer Joins
-1:17:03 Cross Joins
-1:18:16 Unions
-1:19:27 Extract
-1:21:05 IS NULL
-1:22:03 SIMILAR LIKE & ~ 
-1:29:25 GROUP BY
-1:31:14  HAVING
-1:32:18  AGGREGATE FUNCTIONS
+- Order By
+- Limit
+- GROUP BY
+- Distinct
+- Getting Data from Multiple Tables
+- Inner Join
+- Join 3 Tables
+-  Arithmetic Operators
+- Join with Where
+- Outer Joins
+- Cross Joins
+- Unions
+- Extract
+- IS NULL
+- SIMILAR LIKE & ~ 
+- GROUP BY
+-  HAVING
+- AGGREGATE FUNCTIONS
 1:34:22 WORKING WITH VIEWS
 1:45:01 SQL Functions
 1:49:00 Dollar Quotes
