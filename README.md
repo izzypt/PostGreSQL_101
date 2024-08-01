@@ -179,6 +179,8 @@ id SERIAL PRIMARY KEY
 <img width="1687" alt="image" src="https://github.com/user-attachments/assets/85c09c51-f92f-4427-8bc2-cb0cfd550dbd">
 
 
+It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
+
 <a id="createtable"></a>
 
 # Create a Table
