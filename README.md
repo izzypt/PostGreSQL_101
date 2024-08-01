@@ -21,9 +21,9 @@ Learn PGSQL basic concepts , uses and examples.
 - Foreign & Primary Keys
 - Altering Tables Many Examples
 - Getting Data from One Table
-53:40 Where
-54:30 Conditional Operators
-55:48 Logical Operators
+- Where
+- Conditional Operators
+- Logical Operators
 58:12 Order By
 59:32 Limit
 1:01:45 GROUP BY
