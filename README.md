@@ -7,7 +7,6 @@ Learn PGSQL basic concepts , uses and examples.
 - [Change Database to Dark Theme](#darktheme)
 - [Create a Database](#createDB)
 - [Design a Database](#designdb)
-- [Turn Invoice into a Database](#invoicetodb)
 - [Make a Table](#createtable)
 - Data Types
 - Adding Data to Table
@@ -131,10 +130,9 @@ In `pgAdmin`:
 
 - <img width="1626" alt="image" src="https://github.com/user-attachments/assets/78e85642-8b37-45c8-b9e5-866076188ace">
 
+<a id="createtable"></a>
 
-<a id="designdb"></a>
-
-# Design a Database
+# Create a Table
 
 When you start creating a DB, you need to: 
 
@@ -181,6 +179,4 @@ id SERIAL PRIMARY KEY
 
 It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 
-<a id="createtable"></a>
 
-# Create a Table
