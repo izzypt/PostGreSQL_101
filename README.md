@@ -170,10 +170,16 @@ city VARCHAR(40) NOT NULL,
 state CHAR(2) NOT NULL,
 zipcode SMALLINT NOT NULL,
 phone VARCHAR(20) NOT NULL,
-birth_data DATE NULL
+birth_data DATE NULL,
+sex CHAR(1) NOT NULL,
+date_entered TIMESTAMP NOT NULL,
+id SERIAL PRIMARY KEY
 )
 
 ```
+
+<img width="1687" alt="image" src="https://github.com/user-attachments/assets/85c09c51-f92f-4427-8bc2-cb0cfd550dbd">
+
 
 <a id="createtable"></a>
 
