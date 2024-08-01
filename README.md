@@ -8,7 +8,7 @@ Learn PGSQL basic concepts , uses and examples.
 - [Create a Database](#createDB)
 - [Design a Database](#designdb)
 - [Turn Invoice into a Database](#invoicetodb)
-- Make a Table
+- [Make a Table](#createtable)
 - Data Types
 - Adding Data to Table
 - To See Data
@@ -156,3 +156,25 @@ When you start creating a DB, you need to:
 # Turn Invoice into DB
 
 <img width="1063" alt="image" src="https://github.com/user-attachments/assets/43f1e304-ea7e-4042-bbd6-4efbc6bfc930">
+
+Go into the `Query`tool and 
+
+```
+CREATE TABLE customer(
+first_name VARCHAR(30) NOT NULL,
+last_name VARCHAR(30) NOT NULL,
+email VARCHAR(60) NOT NULL,
+company VARCHAR(60) NOT NULL,
+street VARCHAR(50) NOT NULL,
+city VARCHAR(40) NOT NULL,
+state CHAR(2) NOT NULL,
+zipcode SMALLINT NOT NULL,
+phone VARCHAR(20) NOT NULL,
+birth_data DATE NULL
+)
+
+```
+
+<a id="createtable"></a>
+
+# Create a Table
