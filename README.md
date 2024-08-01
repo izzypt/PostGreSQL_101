@@ -256,3 +256,9 @@ It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 - **DATERANGE**: Range of dates
 
 
+<a id="datatotable"></a>
+
+# Adding data to Table
+
+<img width="1673" alt="image" src="https://github.com/user-attachments/assets/075d886b-e1e7-4380-8fda-0108b14824b2">
+
