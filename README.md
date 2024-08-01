@@ -8,7 +8,7 @@ Learn PGSQL basic concepts , uses and examples.
 - [Create a Database](#createDB)
 - [Design a Database](#designdb)
 - [Make a Table](#createtable)
-- Data Types
+- [Data Types](#datatypes)
 - Adding Data to Table
 - To See Data
 - SELECT
@@ -176,3 +176,81 @@ id SERIAL PRIMARY KEY
 It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 
 
+<a id="datatypes"></a>
+# Data Types
+
+### Numeric Types
+- **SMALLINT**: Small-range integer
+- **INTEGER**: Standard integer
+- **BIGINT**: Large-range integer
+- **DECIMAL**: Exact numeric with user-defined precision
+- **NUMERIC**: Exact numeric with user-defined precision
+- **REAL**: Single precision floating-point number
+- **DOUBLE PRECISION**: Double precision floating-point number
+- **SERIAL**: Auto-incrementing integer
+- **BIGSERIAL**: Auto-incrementing large integer
+
+### Character Types
+- **CHAR(N)**: Fixed-length character string
+- **VARCHAR(N)**: Variable-length character string
+- **TEXT**: Variable-length character string with no length limit
+
+### Binary Data Types
+- **BYTEA**: Binary data ("byte array")
+
+### Date/Time Types
+- **DATE**: Calendar date (year, month, day)
+- **TIME**: Time of day (without time zone)
+- **TIME WITH TIME ZONE**: Time of day (with time zone)
+- **TIMESTAMP**: Date and time (without time zone)
+- **TIMESTAMP WITH TIME ZONE**: Date and time (with time zone)
+- **INTERVAL**: Time span
+
+### Boolean Type
+- **BOOLEAN**: Boolean value (true/false)
+
+### Enumerated Type
+- **ENUM**: Enumeration of predefined values
+
+### Geometric Types
+- **POINT**: Geometric point
+- **LINE**: Infinite line
+- **LSEG**: Line segment
+- **BOX**: Rectangular box
+- **PATH**: Geometric path (open or closed)
+- **POLYGON**: Closed geometric path
+- **CIRCLE**: Circle
+
+### Network Address Types
+- **CIDR**: IPv4 or IPv6 network
+- **INET**: IPv4 or IPv6 host address
+- **MACADDR**: MAC address
+
+### Bit String Types
+- **BIT(N)**: Fixed-length bit string
+- **VARBIT(N)**: Variable-length bit string
+
+### Text Search Types
+- **TSVECTOR**: Text search vector
+- **TSQUERY**: Text search query
+
+### UUID Type
+- **UUID**: Universally unique identifier
+
+### JSON Types
+- **JSON**: Textual JSON data
+- **JSONB**: Binary JSON data, optimized for storage and querying
+
+### Arrays
+- **ARRAY**: Array of any data type
+
+### Composite Types
+- **Composite Types**: Custom user-defined composite types
+
+### Range Types
+- **INT4RANGE**: Range of integers
+- **INT8RANGE**: Range of big integers
+- **NUMRANGE**: Range of numerics
+- **TSRANGE**: Range of timestamps without time zone
+- **TSTZRANGE**: Range of timestamps with time zone
+- **DATERANGE**: Range of dates
