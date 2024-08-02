@@ -5,6 +5,7 @@ Learn PGSQL basic concepts , uses and examples.
 
 - [What is Postgres](#whatispostgres)
 - [Change Database to Dark Theme](#darktheme)
+- [PostGreSQL server](#psqlserver)
 - [What are Schemas and Owners](#schemasandowners)
 - [Create a Database](#createDB)
 - [Design a Database](#designdb)
@@ -121,6 +122,12 @@ To start using `PostgreSQL`, you can install it on your local machine, set up a 
 In `pgAdmin`:
 
 - File -> Preferences -> Miscellaneous -> Themes -> Theme -> Dark
+
+
+<a id="psqlserver"></a>
+
+# PostGreSQL server
+
 
 
 <a id="schemasandowners"></a>
