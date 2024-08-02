@@ -128,7 +128,82 @@ In `pgAdmin`:
 
 # PostGreSQL server
 
+### PostgreSQL Server Hierarchy
 
+1. **PostgreSQL Server**: This is the top-level instance that manages everything. It can run on a physical or virtual machine and can host multiple databases. When you install PostgreSQL, you are setting up this server.
+
+2. **Databases**: Each PostgreSQL server can contain multiple databases. Databases are separate from each other, and each one can hold its own set of schemas and data. 
+
+3. **Schemas**: Within each database, there can be multiple schemas. Schemas help organize database objects like tables, views, functions, etc.
+
+4. **Database Objects**: These include tables, views, indexes, sequences, functions, and more, which reside within schemas.
+
+### Connecting to PostgreSQL
+
+- **Client Connection**: Clients connect to the PostgreSQL server using client software (e.g., `psql`, PgAdmin, applications using database drivers). The connection is typically made to a specific database on the server.
+
+### Example of a Typical Setup
+
+1. **PostgreSQL Server**: Runs on a machine with an IP address and a port (default is 5432).
+2. **Databases on the Server**:
+   - `database1`
+   - `database2`
+3. **Schemas within `database1`**:
+   - `public` (default schema)
+   - `schema1`
+4. **Tables within `schema1` in `database1`**:
+   - `table1`
+   - `table2`
+
+### Connecting to the Server
+
+1. **Server Connection**: Connect to the PostgreSQL server using an IP address or hostname and port number.
+2. **Database Selection**: Specify which database you want to connect to on that server.
+
+### Example Commands
+
+1. **Starting the PostgreSQL Server**:
+   - Typically, the server starts automatically, but it can also be started manually with:
+     ```bash
+     pg_ctl start -D /path/to/data_directory
+     ```
+
+2. **Connecting to the Server and a Specific Database**:
+   - Using `psql`:
+     ```bash
+     psql -h localhost -p 5432 -U username -d database1
+     ```
+     Here:
+     - `-h localhost` specifies the host (local machine in this case).
+     - `-p 5432` specifies the port number.
+     - `-U username` specifies the username.
+     - `-d database1` specifies the database to connect to.
+
+### Visual Representation
+
+Here's a simplified visual representation:
+
+```
+PostgreSQL Server (IP: localhost, Port: 5432)
+  ├── Database: database1
+  │     ├── Schema: public
+  │     │     ├── Table: table1
+  │     │     └── Table: table2
+  │     └── Schema: schema1
+  │           ├── Table: table3
+  │           └── Function: function1
+  ├── Database: database2
+        └── Schema: public
+              ├── Table: table4
+              └── View: view1
+```
+
+### Summary
+
+- **PostgreSQL Server**: The top-level instance managing all databases.
+- **Databases**: Multiple databases can exist within a single PostgreSQL server.
+- **Schemas**: Each database can have multiple schemas for organizing objects.
+- **Client Connections**: Clients connect to the server and specify which database to use.
 
 <a id="schemasandowners"></a>
 
