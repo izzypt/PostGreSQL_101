@@ -10,7 +10,7 @@ Learn PGSQL basic concepts , uses and examples.
 - [Make a Table](#createtable)
 - [Data Types](#datatypes)
 - [Adding Data to Table](#datatotable)
-- To See Data
+- [To See Data](#seedata)
 - SELECT
 - Create Custom Type
 - Change Column Data Type
@@ -262,3 +262,8 @@ It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 
 <img width="1673" alt="image" src="https://github.com/user-attachments/assets/075d886b-e1e7-4380-8fda-0108b14824b2">
 
+<a id="seedata"></a>
+
+# To see data
+
+![image](https://github.com/user-attachments/assets/f515a723-84c0-43f1-8ece-7f146432a25c)
