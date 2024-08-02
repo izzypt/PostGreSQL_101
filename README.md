@@ -155,6 +155,81 @@ Mrs. Smith and Mr. Brown make sure the books (tables) are well-organized and dec
 
 By having schemas and owners, PostgreSQL keeps everything tidy and well-managed, just like a well-run library.
 
+In PostgreSQL, it is the database (DB) that holds multiple schemas, not the other way around. Here's how it works:
+
+### Database and Schemas Relationship
+
+- **Database (DB)**: This is the top-level container. A PostgreSQL server can manage multiple databases.
+- **Schemas**: These are organizational units within a single database. Each schema can contain multiple tables, views, functions, and other database objects.
+
+### Visual Representation
+
+Think of it like this:
+
+```
+PostgreSQL Server
+  ├── Database 1
+  │     ├── Schema A
+  │     │     ├── Table 1
+  │     │     ├── Table 2
+  │     │     └── Function 1
+  │     └── Schema B
+  │           ├── Table 3
+  │           └── View 1
+  ├── Database 2
+  │     ├── Schema C
+  │     └── Schema D
+  └── Database 3
+        └── Schema E
+```
+
+### Example Explanation
+
+- **PostgreSQL Server**: The server can have many databases.
+- **Database 1**: Contains Schema A and Schema B.
+- **Schema A**: Contains Table 1, Table 2, and Function 1.
+- **Schema B**: Contains Table 3 and View 1.
+- **Database 2**: Contains Schema C and Schema D.
+- **Database 3**: Contains Schema E.
+
+### Key Points
+
+- **A schema is part of a single database**.
+- **A database can have multiple schemas**.
+- **Each schema can have multiple database objects (tables, views, etc.)**.
+
+### Creating Databases and Schemas
+
+Here's how you create databases and schemas in PostgreSQL:
+
+1. **Create a Database**
+   ```sql
+   CREATE DATABASE library;
+   ```
+
+   This command creates a new database named `library`.
+
+2. **Connect to the Database**
+   ```sql
+   \c library
+   ```
+
+   This command connects to the `library` database. In SQL client tools like `psql`, this is how you switch to a different database.
+
+3. **Create Schemas in the Database**
+   ```sql
+   CREATE SCHEMA science;
+   CREATE SCHEMA stories;
+   ```
+
+   These commands create two schemas named `science` and `stories` within the `library` database.
+
+### Summary
+
+- **A PostgreSQL server** can have multiple databases.
+- **Each database** can contain multiple schemas.
+- **Each schema** can contain multiple database objects like tables, views, and functions.
+
 <a id="createDB"></a>
 
 # Create a Database
