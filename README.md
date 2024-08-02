@@ -5,6 +5,7 @@ Learn PGSQL basic concepts , uses and examples.
 
 - [What is Postgres](#whatispostgres)
 - [Change Database to Dark Theme](#darktheme)
+- [What are Schemas and Owners](#schemasandowners)
 - [Create a Database](#createDB)
 - [Design a Database](#designdb)
 - [Make a Table](#createtable)
@@ -51,23 +52,23 @@ Learn PGSQL basic concepts , uses and examples.
 - Return a Row / Composite
 - Get Multiple Rows
 - PL/pgSQL
-2:11:35 Variables in Functions
-2:15:55 Store Rows in Variables
-2:19:17 IN INOUT and OUT
-2:21:01 Using Multiple Outs
-2:25:56 Return Query Results
-2:33:42 IF ELSEIF and ELSE
-2:38:48  CASE Statement
-2:42:01 Loop Statement
-2:45:20 FOR LOOP
-2:48:34 Result Sets, Blocks & Raise Notice
-2:51:11 For Each and Arrays
-2:53:20 While Loop
-2:54:54 Continue
-3:01:34 Stored Procedures
-3:09:35 Triggers
-3:29:25 Cursors
-3:39:45 Installation
+- Variables in Functions
+- Store Rows in Variables
+- IN INOUT and OUT
+- Using Multiple Outs
+- Return Query Results
+- IF ELSEIF and ELSE
+-  CASE Statement
+- Loop Statement
+- FOR LOOP
+- Result Sets, Blocks & Raise Notice
+- For Each and Arrays
+- While Loop
+- Continue
+- Stored Procedures
+- Triggers
+- Cursors
+- Installation
 
 <a id="whatispostgres"></a>
 
@@ -120,6 +121,39 @@ To start using `PostgreSQL`, you can install it on your local machine, set up a 
 In `pgAdmin`:
 
 - File -> Preferences -> Miscellaneous -> Themes -> Theme -> Dark
+
+
+<a id="schemasandowners"></a>
+
+# What are Schemas and Owners
+
+### **Schemas**
+Think of a **schema** like a bookshelf in a library. In a library, there are many bookshelves, and each one holds a collection of books that belong together. For example, one bookshelf might have all the science books, another has storybooks, and another has history books. 
+
+In PostgreSQL, a schema is like that bookshelf. It helps keep all the database objects (like tables and other things) organized. So, instead of all the books (or database objects) being mixed up, they are neatly placed in different sections (schemas).
+
+### **Owners**
+Now, let's talk about **owners**. Imagine that every bookshelf in the library has a librarian who takes care of it. This librarian makes sure that the books are in order, decides who can borrow the books, and who can put new books on the shelf. 
+
+In PostgreSQL, the owner is like that librarian. The owner of a schema or table is the person (or role) who has full control over it. They can decide who gets to see or use the data and who can add new data.
+
+### Importance
+- **Schemas (Bookshelves)**: Keep everything organized. Just like you wouldn't want storybooks mixed in with science books, schemas keep different parts of the database neat and easy to find.
+- **Owners (Librarians)**: Make sure everything is taken care of properly. They decide who can see and use the data, just like a librarian decides who can borrow which books.
+
+### Example
+Let's say we have a school library. We could have:
+
+- **Schema (Bookshelf) for Science**: All science tables (books) go here.
+- **Schema (Bookshelf) for Stories**: All story tables (books) go here.
+
+Each bookshelf has its own librarian:
+- **Owner (Librarian) for Science**: Mrs. Smith takes care of the science bookshelf.
+- **Owner (Librarian) for Stories**: Mr. Brown takes care of the story bookshelf.
+
+Mrs. Smith and Mr. Brown make sure the books (tables) are well-organized and decide who can read them.
+
+By having schemas and owners, PostgreSQL keeps everything tidy and well-managed, just like a well-run library.
 
 <a id="createDB"></a>
 
