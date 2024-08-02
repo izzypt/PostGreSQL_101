@@ -13,7 +13,7 @@ Learn PGSQL basic concepts , uses and examples.
 - [Adding Data to Table](#datatotable)
 - [To See Data](#seedata)
 - [Create Custom Type](#customtype)
-- Change Column Data Type
+- [Change Column Data Type](#changecolumndatatype)
 - Thinking About Tables
 - Breaking Up Tables
 -  Primary & Foreign Keys
@@ -306,3 +306,9 @@ It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 # Create Custom Type
 
 <img width="1704" alt="image" src="https://github.com/user-attachments/assets/37c94174-e939-4df5-bcfe-57465502c318">
+
+<a id="changecolumndatatype"></a>
+
+# Change Column Data Type
+
+<img width="1604" alt="image" src="https://github.com/user-attachments/assets/e76e765e-cfdb-47ad-a787-3cd4e14a6055">
