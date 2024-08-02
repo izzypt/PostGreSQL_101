@@ -208,6 +208,10 @@ id SERIAL PRIMARY KEY
 
 It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 
+Let's create  asecond table for the sales person:
+
+<img width="1706" alt="image" src="https://github.com/user-attachments/assets/7eb9e7f7-c80d-488a-9e20-adb0ceacd439">
+
 
 <a id="datatypes"></a>
 # Data Types
