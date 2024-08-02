@@ -11,8 +11,7 @@ Learn PGSQL basic concepts , uses and examples.
 - [Data Types](#datatypes)
 - [Adding Data to Table](#datatotable)
 - [To See Data](#seedata)
-- SELECT
-- Create Custom Type
+- [Create Custom Type](#customtype)
 - Change Column Data Type
 - Thinking About Tables
 - Breaking Up Tables
@@ -267,3 +266,9 @@ It should appear under your dbname-> Schemas -> Tables -> tableName (customer)
 # To see data
 
 ![image](https://github.com/user-attachments/assets/f515a723-84c0-43f1-8ece-7f146432a25c)
+
+<a id="customtype"></a>
+
+# Create Custom Type
+
+<img width="1704" alt="image" src="https://github.com/user-attachments/assets/37c94174-e939-4df5-bcfe-57465502c318">
