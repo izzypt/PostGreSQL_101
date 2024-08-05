@@ -9,6 +9,7 @@ Learn PGSQL basic concepts , uses and examples.
 - [What are Schemas and Owners](#schemasandowners)
 - [Connecting to a Database](#connecting)
 - [Create a Database](#createDB)
+- [Database Objects](#DBObjects)
 - [Design a Database](#designdb)
 - [Make a Table](#createtable)
 - [Data Types](#datatypes)
@@ -419,7 +420,101 @@ When you start creating a DB, you need to:
  
 - How do different tables relate?
   - If we have a sales order we are going to need to relate our customer table to the sales table.
- 
+
+<a id="DBObjects"></a>
+
+# Database Objects
+
+### Database Objects Include:
+
+1. **Tables**: Store data in rows and columns.
+2. **Indexes**: Improve query performance.
+3. **Views**: Simplify complex queries.
+4. **Sequences**: Generate unique values.
+5. **Functions**: Perform operations and return results.
+6. **Triggers**: Execute procedures automatically on specific events.
+7. **Constraints**: Ensure data integrity.
+8. **Types**: Define custom data types.
+9. **Schemas**: Organize database objects within a database.
+10. **Extensions**: Add additional functionality.
+
+1. **Tables**: The primary storage objects for data. Tables are structured with rows and columns.
+   - Example:
+     ```sql
+     CREATE TABLE employees (
+         id SERIAL PRIMARY KEY,
+         name VARCHAR(100) NOT NULL,
+         position VARCHAR(50),
+         salary NUMERIC CHECK (salary > 0)
+     );
+     ```
+
+2. **Indexes**: Used to speed up the retrieval of rows by creating quick lookup references for table data.
+   - Example:
+     ```sql
+     CREATE INDEX idx_employees_name ON employees (name);
+     ```
+
+3. **Views**: Virtual tables that are based on the result of a SELECT query. They simplify complex queries and provide a level of abstraction.
+   - Example:
+     ```sql
+     CREATE VIEW high_salary_employees AS
+     SELECT name, salary
+     FROM employees
+     WHERE salary > 50000;
+     ```
+
+4. **Sequences**: Objects that generate unique numeric values, often used for auto-incrementing primary keys.
+   - Example:
+     ```sql
+     CREATE SEQUENCE employee_id_seq
+     START WITH 1
+     INCREMENT BY 1;
+     ```
+
+5. **Functions**: Stored procedures that perform operations and return a result. They can be written in various languages, including SQL, PL/pgSQL, and others.
+   - Example:
+     ```sql
+     CREATE FUNCTION get_employee_count() RETURNS INTEGER AS $$
+     BEGIN
+         RETURN (SELECT COUNT(*) FROM employees);
+     END;
+     $$ LANGUAGE plpgsql;
+     ```
+
+6. **Triggers**: Procedures that are automatically executed in response to certain events on a table or view, such as INSERT, UPDATE, or DELETE.
+   - Example:
+     ```sql
+     CREATE TRIGGER update_timestamp
+     BEFORE UPDATE ON employees
+     FOR EACH ROW
+     EXECUTE FUNCTION update_modified_column();
+     ```
+
+7. **Constraints**: Rules enforced on table columns to ensure data integrity. These include PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, and NOT NULL constraints.
+   - Example:
+     ```sql
+     ALTER TABLE employees ADD CONSTRAINT unique_name UNIQUE (name);
+     ```
+
+8. **Types**: Custom data types that can be defined to extend PostgreSQL's built-in types.
+   - Example:
+     ```sql
+     CREATE TYPE mood AS ENUM ('happy', 'sad', 'neutral');
+     ```
+
+9. **Schemas**: As mentioned, schemas themselves are also objects that help organize the above objects within a database.
+   - Example:
+     ```sql
+     CREATE SCHEMA hr;
+     ```
+
+10. **Extensions**: Packages that add additional functionality to PostgreSQL. Common extensions include PostGIS (for geographic objects) and pg_trgm (for text search and similarity).
+    - Example:
+      ```sql
+      CREATE EXTENSION IF NOT EXISTS postgis;
+      ```
+
 <a id="createtable"></a>
 
 # Create a Table
